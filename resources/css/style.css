@@ -1,0 +1,62 @@
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  /* note: the 'max' screen is set up for 960 pixels wide.*/
+}
+.container {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width: 960px;
+}
+/*  Formatting for the top logo bar - */
+.logo {
+  background-color: black;
+  color: white;
+}
+.logo .container {
+  height: 2.32rem;
+}
+.container img {
+  display: block;
+  height: 1.5rem;
+  padding-left: 0.5rem;
+}
+.container span {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+/* Formatting for the banner - */
+.banner {
+  display: block;
+  width: 100%;
+  height: 25rem;
+  background-image: url("../../resources/images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.banner .container {
+  height: 10.5rem;
+}
+.container .message {
+  display: flex;
+  flex-direction: column;
+  width: 25rem; /* spec says 20 rem...*/
+  margin-top: 9rem; /* spec says 9 rem...*/
+  background-color: black;
+  color: white;
+}
+.message h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 2rem auto 0.25rem 3rem;
+}
+.message h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 auto 3rem 3rem;
+}
