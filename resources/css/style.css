@@ -131,6 +131,15 @@ nav .mini {
     display: none;
   }
 }
+@media only screen and (max-width: 470px) {
+  .item {
+    width: 90%;
+    margin: auto;
+  }
+  .item.watch {
+    display: none;
+  }
+}
 /* Coordinates formatting */
 .coordinates {
   height: 11rem;
@@ -152,6 +161,20 @@ nav .mini {
   height: 3rem;
   padding-left: 2rem;
 }
+@media only screen and (max-width: 470px) {
+  .coordinates {
+    height: 15rem;
+    display: flex;
+  }
+  .coordinates .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .detail {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+}
 /* Footer formatting */
 .footer {
   height: 11.5rem;
@@ -162,4 +185,9 @@ nav .mini {
 }
 .footer .container {
   justify-content: flex-start;
+}
+@media only screen and (max-width: 470px) {
+  .footer .container {
+    justify-content: center;
+  }
 }
