@@ -1,7 +1,6 @@
 html {
   font-family: Helvetica;
   font-size: 18px;
-  /* note: the 'max' screen is set up for 960 pixels wide.*/
 }
 .container {
   display: flex;
@@ -12,7 +11,11 @@ html {
 .container span {
   display: flex;
   font-size: 1rem;
-  /*padding-left: 1rem;*/
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
 }
 /*  Formatting for the top logo bar - */
 .logo {
@@ -75,10 +78,20 @@ html {
 }
 .navigation .container {
   justify-content: space-between;
-  padding: 0;
 }
 nav .mini {
   display: none;
+}
+@media only screen and (max-width: 1024px) {
+  nav .mini {
+    display: flex;
+  }
+  nav .maxi {
+    display: none;
+  }
+  .navigation .container {
+    justify-content: center;
+  }
 }
 /* Products section formatting */
 .products {
@@ -109,6 +122,14 @@ nav .mini {
   height: 2rem;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (max-width: 1024px) {
+  .item {
+    width: 47%;
+  }
+  .item.glasses {
+    display: none;
+  }
 }
 /* Coordinates formatting */
 .coordinates {
