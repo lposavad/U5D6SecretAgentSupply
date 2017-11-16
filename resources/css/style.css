@@ -12,7 +12,7 @@ html {
 .container span {
   display: flex;
   font-size: 1rem;
-  padding-left: 1rem;
+  /*padding-left: 1rem;*/
 }
 /*  Formatting for the top logo bar - */
 .logo {
@@ -21,6 +21,9 @@ html {
 }
 .logo .container {
   height: 2.75rem;
+}
+.logo .container span {
+  padding-left: 1rem;
 }
 .container img {
   display: block;
@@ -72,11 +75,70 @@ html {
 }
 .navigation .container {
   justify-content: space-between;
+  padding: 0;
 }
 nav .mini {
   display: none;
 }
-/* Formatting for the Products section */
+/* Products section formatting */
 .products {
-  
+  height: 21rem;
+  display: flex;
+  align-items: center;
+}
+.products .container {
+  justify-content: space-between;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  width: 29%;
+  height: 15rem;
+  justify-content: center;
+}
+.item img {
+  height: 9rem;
+  padding: 2rem;
+  object-fit: contain;
+}
+.itemtext {
+  display: block;
+  background-color: black;
+  color: white;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+/* Coordinates formatting */
+.coordinates {
+  height: 11rem;
+  display: flex;
+  align-items: center;
+}
+.coordinates .container {
+  justify-content: space-between;
+}
+.detail {
+  display: block;
+  width: 35%;
+}
+.category {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 3rem;
+  padding-left: 2rem;
+}
+/* Footer formatting */
+.footer {
+  height: 11.5rem;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+.footer .container {
+  justify-content: flex-start;
 }
