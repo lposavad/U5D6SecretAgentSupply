@@ -15,7 +15,7 @@ html {
   color: white;
 }
 .logo .container {
-  height: 2.32rem;
+  height: 2.75rem;
 }
 .container img {
   display: block;
@@ -37,26 +37,26 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
 }
 .banner .container {
-  height: 10.5rem;
+  height: 15rem;
 }
 .container .message {
   display: flex;
   flex-direction: column;
-  width: 25rem; /* spec says 20 rem...*/
-  margin-top: 9rem; /* spec says 9 rem...*/
+  width: 26rem; /* spec says 20 rem...*/
+  margin-top: 16.5rem; /* spec says 9 rem...*/
   background-color: black;
   color: white;
 }
 .message h3 {
   font-size: 1rem;
   font-weight: bold;
-  margin: 2rem auto 0.25rem 3rem;
+  margin: 3.3rem auto 1.8rem 3rem;
 }
 .message h1 {
   font-size: 2rem;
   font-weight: bold;
-  margin: 0 auto 3rem 3rem;
+  line-height: 2.4rem;
+  margin: 0 auto 2.4rem 3rem;
 }
