@@ -9,6 +9,11 @@ html {
   align-items: center;
   width: 960px;
 }
+.container span {
+  display: flex;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
 /*  Formatting for the top logo bar - */
 .logo {
   background-color: black;
@@ -22,11 +27,8 @@ html {
   height: 1.5rem;
   padding-left: 0.5rem;
 }
-.container span {
-  display: flex;
+#logotext {
   text-transform: uppercase;
-  font-size: 1rem;
-  padding-left: 1rem;
 }
 /* Formatting for the banner - */
 .banner {
@@ -59,4 +61,22 @@ html {
   font-weight: bold;
   line-height: 2.4rem;
   margin: 0 auto 2.4rem 3rem;
+}
+/* Formatting for the navigation bar */
+.navigation {
+  background-color: firebrick;
+  color: white;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+}
+.navigation .container {
+  justify-content: space-between;
+}
+nav .mini {
+  display: none;
+}
+/* Formatting for the Products section */
+.products {
+  
 }
