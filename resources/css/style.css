@@ -57,7 +57,7 @@ html {
   background-color: black;
   color: white;
 }
-.message h3 {
+.message h4 {
   font-size: 1rem;
   font-weight: bold;
   margin: 3.3rem auto 1.8rem 3rem;
@@ -67,6 +67,26 @@ html {
   font-weight: bold;
   line-height: 2.4rem;
   margin: 0 auto 2.4rem 3rem;
+}
+@media only screen and (max-width: 470px) {
+  /* span the screen at the image bottom */
+  /* resize the text */
+  .banner {
+    height: 15.3rem;
+    z-index: 20;
+  }
+  .container .message {
+    width: 100%;
+    margin-top: 12.5rem;
+  }
+  .message h4 {
+    font-size: 0.87rem;
+    margin: 2.4rem auto 0.77rem 2rem;
+  }
+  .message h1 {
+    font-size: 1.2rem;
+    margin: 0 auto 1.5rem 2rem;
+  }
 }
 /* Formatting for the navigation bar */
 .navigation {
@@ -85,12 +105,18 @@ nav .mini {
 @media only screen and (max-width: 1024px) {
   nav .mini {
     display: flex;
+    z-index: 10;
   }
   nav .maxi {
     display: none;
   }
   .navigation .container {
     justify-content: center;
+  }
+}
+@media only screen and (max-width: 470px) {
+  nav .mini {
+    display: none;
   }
 }
 /* Products section formatting */
